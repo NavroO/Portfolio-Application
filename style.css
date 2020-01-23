@@ -1,16 +1,41 @@
+html, body {
+    background-color: rgb(6, 61, 109);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 .welcome_text {
     margin: auto;
     width: 50%;
     border: 3px solid green;
     padding: 10px;
+    color: aliceblue;
 }
 
+.numbers {
+    color: aquamarine;
+}
+
+.aboutme h2 {
+    color: aquamarine;
+}
+
+.aboutme p {
+    color: aliceblue;
+}
 
 nav ol li {
     display: inline;
     margin: 10px;
 }
 
+nav ol li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+}
+
 nav ol p {
     display: inline;
 }
+
