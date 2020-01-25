@@ -1,19 +1,13 @@
-html, body {
-    background-color: rgb(52, 53, 54);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.welcome_text {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-    color: aliceblue;
+.navheader {
+    position: absolute;
+    top: 100;
+    left: 20;
+    right: 50;
 }
 
 .numbers {
     color: aquamarine;
+    margin: 5px;
 }
 
 .aboutme h2 {
@@ -23,6 +17,7 @@ html, body {
 .aboutme p {
     color: aliceblue;
 }
+
 
 nav ol li {
     display: inline;
