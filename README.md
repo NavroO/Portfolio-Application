@@ -1,11 +1,9 @@
 # Portfolio-Website
 
-This is my first portfolio page. V1 of this page is not very advanced. I would like the entire application to be contained on one page so that the browser does not have to load additional pages and the content is launched when it must be displayed.
-
+This is my first portfolio application. The idea for this application came about when I was reading a book about basics of Java and started learning JavaFX. This application has access to all my projects (To my entire portfolio). I haven't transferred my portfolio to the browser because I haven't mastered Spring Boot yet.
 
 # Technologies
 
-- HTML
-- CSS
-- JavaScript
+- JAVAFX
+
 
