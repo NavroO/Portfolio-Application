@@ -1,58 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0C172A;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label accessibleRole="BUTTON" layoutX="857.0" layoutY="20.0" text="01." textFill="#00fbff">
+      <Label accessibleRole="BUTTON" layoutX="857.0" layoutY="20.0" text="01." textFill="#51838d">
          <font>
             <Font name="Courier New" size="13.0" />
          </font>
       </Label>
-      <Label accessibleRole="BUTTON" layoutX="886.0" layoutY="20.0" text="About" textFill="#d7d7d7">
+      <Label accessibleRole="BUTTON" layoutX="886.0" layoutY="20.0" text="About" textFill="#758095">
          <font>
             <Font name="Courier New" size="13.0" />
          </font>
       </Label>
-      <Label accessibleRole="BUTTON" layoutX="935.0" layoutY="20.0" text="02." textFill="#00fbff">
+      <Label accessibleRole="BUTTON" layoutX="935.0" layoutY="20.0" text="02." textFill="#51838d">
          <font>
             <Font name="Courier New" size="13.0" />
          </font>
       </Label>
-      <Label accessibleRole="BUTTON" layoutX="964.0" layoutY="20.0" text="Experience" textFill="#d7d7d7">
+      <Label accessibleRole="BUTTON" layoutX="964.0" layoutY="20.0" text="Experience" textFill="#758095">
          <font>
             <Font name="Courier New" size="13.0" />
          </font>
       </Label>
-      <Label accessibleRole="BUTTON" layoutX="1053.0" layoutY="20.0" text="03." textFill="#00fbff">
+      <Label accessibleRole="BUTTON" layoutX="1053.0" layoutY="20.0" text="03." textFill="#51838d">
          <font>
             <Font name="Courier New" size="13.0" />
          </font>
       </Label>
-      <Label accessibleRole="BUTTON" layoutX="1082.0" layoutY="20.0" text="Contact" textFill="#d7d7d7">
+      <Label accessibleRole="BUTTON" layoutX="1082.0" layoutY="20.0" text="Contact" textFill="#758095">
          <font>
             <Font name="Courier New" size="13.0" />
          </font>
       </Label>
       <Button layoutX="1152.0" layoutY="14.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="86.0" text="MY CV" />
-      <Label accessibleRole="BUTTON" layoutX="245.0" layoutY="274.0" text="Hi, my name is" textFill="#00fbff">
+      <Label accessibleRole="BUTTON" layoutX="245.0" layoutY="274.0" text="Hi, my name is" textFill="#70a7b0">
          <font>
             <Font name="Courier New" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="245.0" layoutY="302.0" text="Tomasz Nawrocki." textFill="#bfbfbf">
+      <Label layoutX="245.0" layoutY="302.0" text="Tomasz Nawrocki." textFill="#c9d2fa">
          <font>
             <Font name="Courier New Bold" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="245.0" layoutY="357.0" text="I am a Java programmer based in Katowice. Specializes in creating window applications in Java and Backend Develop" textFill="#979797">
+      <Label layoutX="245.0" layoutY="357.0" text="I am a Java programmer based in Katowice. Specializes in creating Backend Develop" textFill="#6c768b">
          <font>
             <Font name="Courier New Bold" size="12.0" />
          </font>
       </Label>
       <Button layoutX="245.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Get in touch" />
-
+      <ImageView accessibleRole="BUTTON" disable="true" fitHeight="44.0" fitWidth="39.0" layoutX="29.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Img/GitHub-Mark-Light-64px.png" />
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" disable="true" fitHeight="44.0" fitWidth="39.0" layoutX="29.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true" styleClass="links">
+         <Image url="@../Img/linkedin.png" />
+      </ImageView>
+      <ProgressBar prefWidth="200.0" progress="0.0" />
    </children>
 </Pane>
