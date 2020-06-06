@@ -4,6 +4,8 @@ This is my first portfolio application. The idea for this application came about
 
 # Technologies
 
-- JAVAFX
+- HTML
+- CSS
+- JavaScript
 
 
