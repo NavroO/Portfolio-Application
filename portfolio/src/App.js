@@ -1,10 +1,12 @@
 import React from 'react';
-import Hamburger from '../Components/Hamburger/Hamburger';
+import Welcome from './Components/Welcome';
+
+
 
 function App() {
   return (
-    <div className="App">
-        <Hamburger />
+    <div>
+      <Welcome />
     </div>
   );
 }
