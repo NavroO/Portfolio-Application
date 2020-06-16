@@ -1,0 +1,117 @@
+.AboutDiv {
+    background: #37333A;
+}
+
+
+.HoverIMG {
+    position: absolute;
+    width: 215px;
+    height: 250px;
+    left: 50px;
+    top: 89px;
+
+    background: #A51313;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Profile {
+    position: absolute;
+    width: 215px;
+    height: 250px;
+    left: 103px;
+    top: 45px;
+
+    /*background: url();*  /*TODO: I must add profile img here */
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Label {
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    left: 50px;
+    top: 376px;
+
+    background: #A51313;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+    position: absolute;
+    width: 234px;
+    height: 29px;
+    left: 98px;
+    top: 364px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    color: #A51313;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.desc {
+    position: absolute;
+    width: 244px;
+    height: 29px;
+    left: 50px;
+    top: 393px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.li {
+    position: absolute;
+    width: 244px;
+    height: 29px;
+    left: 50px;
+    top: 447px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Contact {
+    position: absolute;
+    width: 268px;
+    height: 120px;
+    left: 50px;
+    top: 503px;
+
+    background: #2F2B32;
+    mix-blend-mode: normal;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
