@@ -34,7 +34,6 @@
 
     color: #FFFFFF;
 
-    border: 1px solid rgba(0, 0, 0, 0.25);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -64,4 +63,104 @@
 
 .name {
     color: #A51313;
+}
+
+.Skills {
+    position: absolute;
+    width: 289px;
+    height: 25px;
+    left: 44px;
+    top: 409px;
+    background: #514E50;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.label1 {
+    position: absolute;
+    left: 32.53%;
+    right: 67.13%;
+    top: 36%;
+    bottom: 28%;
+
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.label2 {
+    position: absolute;
+    left: 67.13%;
+    right: 32.53%;
+    top: 36%;
+    bottom: 28%;
+
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.skillText {
+    font-size: 10px;
+    line-height: 12px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* TODO: FIX BORDER */
+
+#WebDesigner {
+    position: absolute;
+    left: 5.19%;
+    right: 73.01%;
+    top: 32%;
+    bottom: 20%;
+}
+
+#WebDeveloper {
+    position: absolute;
+    left: 38.06%;
+    right: 38.41%;
+    top: 32%;
+    bottom: 20%;
+}
+
+#UI {
+    position: absolute;
+    left: 71.63%;
+    right: 4.15%;
+    top: 32%;
+    bottom: 20%;
+}
+
+.Portfolio {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    left: 44px;
+    top: 480px;
+
+    background: #A51313;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* TODO: FIX BORDER SAME PROBLEM */
+
+
+#portfolio {
+    position: absolute;
+    left: 3%;
+    right: 0%;
+    top: 16%;
+    bottom: 12%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 11px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

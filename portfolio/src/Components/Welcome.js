@@ -15,18 +15,18 @@ class Welcome extends Component {
                 </div>
 
                 <div className="Skills">
-                    <div className="Label"></div>
-                    <div className="Label2"></div>
+                    <div className="label1"></div>
+                    <div className="label2"></div>
+                    <p className="skillText" id="WebDesigner">Web Designer</p>
+                    <p className="skillText" id="WebDeveloper">Web Developer</p>
+                    <p className="skillText" id="UI">UI/UX Designer</p>
                 </div>
 
-                
-                <p className="labelText" id="wd">Web Designer</p>
-                <p className="labelText" id="wb">Web Developer</p>
-                <p className="labelText" id="ui">UI/UX Designer</p>
-                <div className="Labelchild1"></div>
-                <div className="Labelchild2"></div>
-                <div className="Portfolio"></div>
-                <p className="PortfolioText">MY PORTFOLIO</p>
+                <div className="Portfolio">
+                    <p id="portfolio">Portfolio</p>
+                </div>
+
+
             </div>
         );
     }
