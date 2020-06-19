@@ -1,19 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    background: #37333A;
 }
 
-/* TODO:  Render background*/
-.bg {
-    margin: auto;
-    background-image: ("../IMG/Bg.jpeg");
+.Welcome_Text {
+    position: absolute;
+    width: 279px;
+    height: 99px;
+    left: 12px;
+    top: 227px;
 }
 
+.Red_Label {
+    position: absolute;
+    left: 0%;
+    right: 87.46%;
+    top: 12.12%;
+    bottom: 82.83%;
+
+    background: #A51313;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .Text {
-    position: absolute;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -29,146 +38,30 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 #hey {
     position: absolute;
-    width: 234px;
-    height: 29px;
-    left: 57px;
-    top: 227px;
+    left: 16.13%;
+    right: 0%;
+    top: 0%;
+    bottom: 70.71%;
 }
 
 #welcome {
     position: absolute;
-    width: 234px;
-    height: 29px;
-    left: 57px;
-    top: 262px;
+    left: 16.13%;
+    right: 0%;
+    top: 35.35%;
+    bottom: 35.35%;
 }
 
 #city {
     position: absolute;
-    width: 234px;
-    height: 29px;
-    left: 57px;
-    top: 297px;
+    left: 16.13%;
+    right: 0%;
+    top: 70.71%;
+    bottom: 0%;
 }
 
-.Label {
-    position: absolute;
-    width: 35px;
-    height: 5px;
-    left: 12px;
-    top: 239px;
-
-    background: #A51313;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.Label2 {
-    position: absolute;
-    width: 289px;
-    height: 25px;
-    left: 44px;
-    top: 409px;
-
-    background: #514E50;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.Labelchild1 {
-    position: absolute;
-    width: 1px;
-    height: 9px;
-    left: 138px;
-    top: 418px;
-
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.Labelchild2 {
-    position: absolute;
-    width: 1px;
-    height: 9px;
-    left: 238px;
-    top: 418px;
-
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.labelText {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 10px;
-    line-height: 12px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#wd {
-    position: absolute;
-    width: 63px;
-    height: 12px;
-    left: 59px;
-    top: 417px;
-}
-
-#wb {
-    position: absolute;
-    width: 68px;
-    height: 12px;
-    left: 154px;
-    top: 417px;
-}
-
-#ui {
-    position: absolute;
-    width: 70px;
-    height: 12px;
-    left: 251px;
-    top: 417px;
-}
-
-
-.Portfolio {
-    position: absolute;
-    width: 100px;
-    height: 25px;
-    left: 44px;
-    top: 480px;
-
-    background: #A51313;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.PortfolioText {
-    /* TODO: CENTER TEXT DOSEN'T WORK  */
-    position: absolute;
-    width: 97px;
-    height: 18px;
-    left: 47px;
-    top: 484px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 9px;
-    line-height: 11px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.name {
+    color: #A51313;
 }
