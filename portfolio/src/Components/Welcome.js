@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import '../CSS/Welcome.css';
 
+
+
 class Welcome extends Component {
     render() {
         return (
             <div className="WelcomeDiv">
+                
                 <div className="bg"></div>
 
                 <div className="Welcome_Text">
@@ -13,6 +16,8 @@ class Welcome extends Component {
                     <p className="Text" id="welcome">I’m <p className="name">Tomasz Nawrocki</p></p>
                     <p className="Text" id="city">Based In Katowice</p>
                 </div>
+
+                // TODO: TIP: TRY TO ADD EMPTY DIV WITCH BG THEN U CAN FIX THIS BUGS!
 
                 <div className="Skills">
                     <div className="label1"></div>
@@ -23,7 +28,7 @@ class Welcome extends Component {
                 </div>
 
                 <div className="Portfolio">
-                    <p id="portfolio">Portfolio</p>
+                    <p id="portfolio">MY PORTFOLIO</p>
                 </div>
 
 
