@@ -13,11 +13,11 @@ class Welcome extends Component {
                 <div className="Welcome_Text">
                     <div className="Red_Label"></div>
                     <p className="Text" id="hey">Hey There!</p>
-                    <p className="Text" id="welcome">I’m <p className="name">Tomasz Nawrocki</p></p>
+                    <p className="Text" id="welcome">I’m <span>Tomasz Nawrocki</span></p>
                     <p className="Text" id="city">Based In Katowice</p>
                 </div>
 
-                // TODO: TIP: TRY TO ADD EMPTY DIV WITCH BG THEN U CAN FIX THIS BUGS!
+                
 
                 <div className="Skills">
                     <div className="label1"></div>
