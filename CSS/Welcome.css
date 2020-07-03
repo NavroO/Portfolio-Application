@@ -16,6 +16,10 @@
     border-style: none;
 }
 
+button { 
+    border-style: none; 
+}
+
 .welcome {
     position: relative;
     width: 279px;
@@ -29,7 +33,6 @@
     font-size: 24px;
     line-height: 28px;
 
-    display: flex;
     align-items: center;
 
     color: #FFFFFF;
@@ -47,3 +50,32 @@
     background-color: var(--red);
 }
 
+.welcome h2 {
+    position: absolute;
+    left: 16.13%;
+    right: 0%;
+    top: 0%;
+    bottom: 70.71%;
+}
+
+
+
+/* 
+
+TODO: Position without use class
+
+.welcome p:nth-child(1) {
+    position: absolute;
+    left: 16.13%;
+    right: 0%;
+    top: 35.35%;
+    bottom: 35.35%;
+}
+
+.welcome p:nth-last-child() {
+    position: absolute;
+    left: 16.13%;
+    right: 0%;
+    top: 70.71%;
+    bottom: 0%;
+} */
