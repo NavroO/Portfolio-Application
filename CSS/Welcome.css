@@ -6,9 +6,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-.welcome {
+
+
+body {
+    background-image: url("../Img/Bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.welcomeDiv {
     position: relative;
     width: 279px;
     height: 99px;
@@ -29,7 +47,9 @@
 
 }
 
-.welcome div {
+
+
+.welcomeDiv div {
     position: absolute;
     left: 0%;
     right: 87.46%;
@@ -38,7 +58,7 @@
     background-color: var(--red);
 }
 
-.welcome h2 {
+.welcomeDiv h2 {
     position: absolute;
     left: 16.13%;
     right: 0%;
