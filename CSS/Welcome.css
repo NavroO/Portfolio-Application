@@ -2,22 +2,10 @@
     --red: #A51313;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.hamburger {
-    position: fixed;
-    left: 318px;
-    top: 23px;
-    border-style: none;
-}
-
-button { 
-    border-style: none; 
 }
 
 .welcome {
@@ -59,12 +47,7 @@ button {
 }
 
 
-
-/* 
-
-TODO: Position without use class
-
-.welcome p:nth-child(1) {
+.welcomeText {
     position: absolute;
     left: 16.13%;
     right: 0%;
@@ -72,10 +55,14 @@ TODO: Position without use class
     bottom: 35.35%;
 }
 
-.welcome p:nth-last-child() {
+.welcomeText strong {
+    color: var(--red);
+}
+
+.location {
     position: absolute;
     left: 16.13%;
     right: 0%;
     top: 70.71%;
     bottom: 0%;
-} */
+}
