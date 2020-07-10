@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
@@ -24,6 +23,7 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
+    margin: 0 auto;
 }
 
 
@@ -49,7 +49,6 @@ body {
 }
 
 
-
 .welcomeDiv div {
     position: absolute;
     left: 0%;
@@ -57,6 +56,9 @@ body {
     top: 12.12%;
     bottom: 82.83%;
     background-color: var(--red);
+
+    width: 10%;
+    height: 2%;
 }
 
 .welcomeDiv h2 {
@@ -122,6 +124,8 @@ body {
     bottom: 20%;
 }
 
+
+
 .skills p:nth-child(2) {
     position: absolute;
     left: 38.06%;
@@ -168,19 +172,95 @@ body {
     background: var(--red);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-style: none;
-
 }
 
-.portfolio p {
+.portfolio a {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 9px;
+    font-size: 15px;
     line-height: 11px;
     text-transform: uppercase;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    text-decoration: none;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+@media (min-width: 530px) {
+
+    .welcomeDiv {
+        width: 350px;
+        height: 150px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .skills {
+        position: relative;
+        width: 350px;
+        height: 30px;
+    
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .skills p {
+        font-size: 12px;
+        line-height: 13px;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+    .portfolio {
+        position: relative;
+        width: 150px;
+        height: 30px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .portfolio a {
+        font-size: 20px;
+        line-height: 15px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+@media (min-width: 635px) {
+
+    .welcomeDiv {
+        width: 400px;
+        height: 150px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .skills {
+        position: relative;
+        width: 450px;
+        height: 40px;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .skills p {
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    }
+    
+    .portfolio {
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .portfolio a {
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .labelWhite {
+        width: 2px;
+        height: 15px;
+    }
+    
+}
+
