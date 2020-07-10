@@ -16,6 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
@@ -85,4 +86,101 @@ body {
     right: 0%;
     top: 70.71%;
     bottom: 0%;
+}
+
+.skills {
+    position: relative;
+    width: 289px;
+    height: 25px;
+    left: 44px;
+    top: 300px;
+
+    background-color: #514E50;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.skills p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 12px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    left: 5.19%;
+    right: 73.01%;
+    top: 32%;
+    bottom: 20%;
+}
+
+.skills p:nth-child(2) {
+    position: absolute;
+    left: 38.06%;
+    right: 38.41%;
+    top: 32%;
+    bottom: 20%;
+}
+
+.skills p:nth-child(3) {
+    position: absolute;
+    left: 71.63%;
+    right: 4.15%;
+    top: 32%;
+    bottom: 20%;
+}
+
+.labelWhite {
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 2px;
+    height: 10px;
+    position: absolute;
+    left: 32.53%;
+    right: 67.13%;
+    top: 36%;
+    bottom: 28%;
+}
+
+.skills div:nth-child(5) {
+    position: absolute;
+    left: 67.13%;
+    right: 32.53%;
+    top: 36%;
+    bottom: 28%;
+}
+
+
+.portfolio {
+    position: relative;
+    width: 100px;
+    height: 25px;
+    left: 44px;
+    top: 350px;
+    background: var(--red);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-style: none;
+
+}
+
+.portfolio p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
