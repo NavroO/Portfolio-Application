@@ -6,19 +6,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border-style: none;
 }
 
-
-
-body {
+header {
     background-image: url("../Img/Bg.jpeg");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    position: relative;
 }
+
 
 .wrapper {
     width: 100vw;
@@ -29,238 +30,99 @@ body {
 
 .welcomeDiv {
     position: relative;
-    width: 279px;
+    color: white;
+    left: 40px;
+    top: 250px;
+    width: 260px;
     height: 99px;
-    left: 12px;
-    top: 227px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
-
+    font-size: 18px;
+    line-height: 30px;
     align-items: center;
 
     color: #FFFFFF;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
-
-.welcomeDiv div {
-    position: absolute;
-    left: 0%;
-    right: 87.46%;
-    top: 12.12%;
-    bottom: 82.83%;
-    background-color: var(--red);
-
-    width: 10%;
-    height: 2%;
-}
-
-.welcomeDiv h2 {
-    position: absolute;
-    left: 16.13%;
-    right: 0%;
-    top: 0%;
-    bottom: 70.71%;
-}
-
-
-.welcomeText {
-    position: absolute;
-    left: 16.13%;
-    right: 0%;
-    top: 35.35%;
-    bottom: 35.35%;
-}
-
-.welcomeText strong {
+.welcomeDiv strong {
     color: var(--red);
 }
 
-.location {
-    position: absolute;
-    left: 16.13%;
-    right: 0%;
-    top: 70.71%;
-    bottom: 0%;
-}
 
 .skills {
     position: relative;
-    width: 289px;
+    width: 227px;
     height: 25px;
-    left: 44px;
+    left: 40px;
     top: 300px;
 
-    background-color: #514E50;
+    background: #514E50;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.skills p {
+.skills button {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 10px;
-    line-height: 12px;
-
-
-    display: flex;
+    font-size: 7.8px;
+    line-height: 9px;
     align-items: center;
     text-align: center;
 
     color: #FFFFFF;
+    background: transparent;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.skills button:nth-child(1) {
     position: absolute;
-    left: 5.19%;
-    right: 73.01%;
+    left: 4.41%;
+    right: 73.8%;
     top: 32%;
-    bottom: 20%;
+    bottom: 32%;
 }
 
-
-
-.skills p:nth-child(2) {
+.skills button:nth-child(2) {
     position: absolute;
-    left: 38.06%;
-    right: 38.41%;
+    left: 37.28%;
+    right: 39.19%;
     top: 32%;
-    bottom: 20%;
+    bottom: 32%;
 }
 
-.skills p:nth-child(3) {
+.skills button:nth-child(3) {
     position: absolute;
-    left: 71.63%;
-    right: 4.15%;
+    left: 70.84%;
+    right: 4.94%;
     top: 32%;
-    bottom: 20%;
+    bottom: 32%;
 }
-
-.labelWhite {
-    background: #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 2px;
-    height: 10px;
-    position: absolute;
-    left: 32.53%;
-    right: 67.13%;
-    top: 36%;
-    bottom: 28%;
-}
-
-.skills div:nth-child(5) {
-    position: absolute;
-    left: 67.13%;
-    right: 32.53%;
-    top: 36%;
-    bottom: 28%;
-}
-
 
 .portfolio {
     position: relative;
     width: 100px;
     height: 25px;
-    left: 44px;
+    left: 40px;
     top: 350px;
     background: var(--red);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-style: none;
 }
 
 .portfolio a {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 10px;
     line-height: 11px;
-    text-transform: uppercase;
     align-items: center;
+    text-transform: uppercase;
     text-align: center;
+
     color: #FFFFFF;
-    text-decoration: none;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-@media (min-width: 530px) {
-
-    .welcomeDiv {
-        width: 350px;
-        height: 150px;
-        font-size: 30px;
-        line-height: 30px;
-    }
-
-    .skills {
-        position: relative;
-        width: 350px;
-        height: 30px;
-    
-        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    }
-
-    .skills p {
-        font-size: 12px;
-        line-height: 13px;
-        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    }
-    
-    .portfolio {
-        position: relative;
-        width: 150px;
-        height: 30px;
-        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    }
-
-    .portfolio a {
-        font-size: 20px;
-        line-height: 15px;
-        margin: 0 auto;
-        text-transform: uppercase;
-        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    }
-    
-}
-
-@media (min-width: 635px) {
-
-    .welcomeDiv {
-        width: 400px;
-        height: 150px;
-        font-size: 35px;
-        line-height: 40px;
-    }
-
-    .skills {
-        position: relative;
-        width: 450px;
-        height: 40px;
-        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .skills p {
-        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-    }
-    
-    .portfolio {
-        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .portfolio a {
-        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .labelWhite {
-        width: 2px;
-        height: 15px;
-    }
-    
-}
-
