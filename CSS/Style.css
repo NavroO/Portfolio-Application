@@ -126,3 +126,73 @@ header {
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #37333A;
+}
+
+
+.parent {
+    height: 100vh;
+    position: relative;
+    background-color: #37333A;
+}
+
+.redBox {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+
+    left: 5%;
+    right: 28.33%;
+    top: 11.03%;
+    bottom: 0%;
+
+    background: #A51313;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+
+    left: 28.33%;
+    right: 0%;
+    top: 5%;
+    bottom: 11.03%;
+
+    background-image: url("../Img/Profile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.hello {
+    position: relative;
+    width: 300px;
+    height: 112px;
+    left: 20px;
+    top: 1076px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+
+}
+
+.name {
+    position: absolute;
+    left: 17%;
+    right: 0%;
+    top: 0%;
+    bottom: 74.11%;
+    color: #A51313;
+}
