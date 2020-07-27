@@ -1,0 +1,216 @@
+/* font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../Img/Bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.welcome {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 strong {
+    color: #A51313;
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: 25px;
+    font-weight: normal;
+}
+
+header button {
+    line-height: 32px;
+    font-weight: 300;
+    padding: 0 50px;
+    text-transform: uppercase;
+    color: white;
+    border-style: none;
+    background-color: #A51313;
+    font-size: 13px;
+    font-family: 'Saira', sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (orientation: landscape) {
+
+    .welcome {
+        top: 20%;
+        left: 6%;
+        font-size: 45px;
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
+    }
+
+    header button {
+        line-height: 35px;
+        font-weight: 400;
+        padding: 0 60px;
+        font-size: 15px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (orientation: landscape) and (min-width: 823px) {
+
+    .welcome {
+        top: 3%;
+        left: 2%;
+        font-size: 10px;
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
+    }
+
+    header button {
+        line-height: 20px;
+        font-weight: 200;
+        padding: 0 30px;
+        font-size: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (min-width: 411px) {
+    
+    .welcome {
+        left: 10%;
+        font-size: 50px;
+        text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.35);
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header h2 {
+        font-size: 30px;
+        font-weight: 30px;
+    }
+
+    header button {
+        line-height: 40px;
+        font-weight: 400;
+        padding: 0 70px;
+        font-size: 20px;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.35);
+    }
+    
+}
+
+@media (min-width: 768px) {
+    
+    .welcome {
+        font-size: 70px;
+        text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.40);
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 50px;
+        font-weight: 50px;
+    }
+
+    header button {
+        line-height: 50px;
+        font-weight: 500;
+        padding: 0 80px;
+        font-size: 30px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.40);
+    }
+    
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .welcome {
+        left: 5%;
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .welcome {
+        font-size: 80px;
+        top: 35%;
+        text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.45);
+    }
+
+    header h1 {
+        font-size: 70px;
+    }
+
+    header h2 {
+        font-size: 60px;
+        font-weight: 60px;
+    }
+
+    header button {
+        line-height: 60px;
+        font-weight: 600;
+        padding: 0 90px;
+        font-size: 40px;
+        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.45);
+    }
+    
+}
+
+@media (min-width: 1700px) {
+    
+    .welcome {
+        font-size: 90px;
+        text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.40);
+    }
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 70px;
+        font-weight: 70px;
+    }
+
+    header button {
+        line-height: 80px;
+        font-weight: 700;
+        padding: 0 90px;
+        font-size: 40px;
+        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.45);
+    }
+    
+}
+

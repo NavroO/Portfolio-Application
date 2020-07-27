@@ -1,0 +1,48 @@
+.portfolio {
+    background-color: #37333A;
+}
+
+.portfolio h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.portfolio .portfolioImg img {
+    width: 100%;
+}
+
+.portfolio .aboutProject {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 20px;
+    text-align: left;
+}
+
+.portfolio .aboutProject h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+}
+
+.portfolio .aboutProject p {
+    font-size: 12px;
+}
+
+
+.portfolio .project {
+    margin-bottom: 30px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #A51313;
+} 
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #2F2B32;
+}
