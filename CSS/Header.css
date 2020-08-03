@@ -32,6 +32,47 @@ header {
     text-transform: uppercase;
 }
 
+
+.navBar {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   background-color: #2F2B32;
+   width: 100%;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+}
+
+.navBar ul li {
+    display: inline-block;
+    padding: 25px;
+}
+
+.navBar ul li a:hover {
+    color: #A51313;
+    border-bottom: 2px solid #A51313;
+    margin-bottom: 24px;
+    padding-bottom: 15px;
+}
+
+#hamburger {
+    position: fixed;
+    padding: 25px;
+    font-size: 50px;
+    color: white;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hamburger:hover {
+    color: #A51313;
+}
+
 header h1 {
     font-family: 'Saira Condensed', sans-serif;
     font-weight: bold;
@@ -164,8 +205,8 @@ header button {
 @media (min-width: 1024px) {
     
     .welcome {
-        font-size: 80px;
-        top: 35%;
+        font-size: 55px;
+        top: 30%;
         text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.45);
     }
 
@@ -185,6 +226,14 @@ header button {
         font-size: 40px;
         box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.45);
     }
+
+    /* #hamburger {
+        display: none;
+    } */
+
+    .navBar {
+        display: inline-block;
+    }
     
 }
 
@@ -192,6 +241,7 @@ header button {
     
     .welcome {
         font-size: 90px;
+        top: 35%;
         text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.40);
     }
 
@@ -211,6 +261,6 @@ header button {
         font-size: 40px;
         box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.45);
     }
-    
+ 
 }
 
