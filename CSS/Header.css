@@ -37,19 +37,32 @@ header {
    display: none;
    position: fixed;
    z-index: 1;
-   background-color: #2F2B32;
+   background-color: rgba(63, 63, 63, 0.74);
+   border-bottom: 2px solid rgba(35, 35, 35, 0.91);
    width: 100%;
 }
 
-.navBar ul li a {
-    text-decoration: none;
-    font-size: 50px;
-    color: white;
+.navBar ul {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .navBar ul li {
     display: inline-block;
     padding: 25px;
+}
+
+.navBar ul li:nth-child(4) {
+    padding-right: 100px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
 }
 
 .navBar ul li a:hover {
