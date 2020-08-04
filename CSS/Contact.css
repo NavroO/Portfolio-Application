@@ -1,11 +1,29 @@
-input {
-    width: 250px;
-    height: 50px;
-    margin: 10px 50px;
+.contact{
+    background-color: #37333A;
 }
 
-textarea {
+.contact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact_form {
+    background-color: #1b1b1b;
+    width: 750px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.contact input {
+    height: 50px;
     width: 250px;
-    height: 273px;
-    margin: 10px 50px;
+    font-size: 14px;
 }

@@ -6,4 +6,9 @@ This is my first portfolio application. The idea for this application was born w
 
 - HTML
 - CSS
+- JavaScript
+
+# Libraries
+
+- GSAP 
 

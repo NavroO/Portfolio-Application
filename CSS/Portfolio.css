@@ -35,10 +35,6 @@
 }
 
 
-.portfolio .project {
-    margin-bottom: 30px;
-}
-
 .portfolio .project:nth-of-type(odd) {
     background-color: #A51313;
 } 
@@ -46,3 +42,4 @@
 .portfolio .project:nth-of-type(even) {
     background-color: #2F2B32;
 }
+
