@@ -4,11 +4,7 @@ This is my first portfolio application. The idea for this application was born w
 
 # Technologies
 
-- HTML
 - CSS
+- React
 - JavaScript
-
-# Libraries
-
-- GSAP 
 
