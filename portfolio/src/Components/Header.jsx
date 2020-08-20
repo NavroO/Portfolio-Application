@@ -16,6 +16,15 @@ class Header extends Component {
                     <li><a href="https://github.com/NavroO" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
+
+            
+          <div className="welcome">
+            <p>Hey There!</p>
+            <h1>I’m <strong>Tomasz Nawrocki</strong></h1>
+            <h2>Based In Katowice</h2>
+            <button className="headerButton">MY CV</button>
+          </div>
+
       </div>
     );
   }

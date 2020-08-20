@@ -105,7 +105,7 @@ header h2 {
     font-weight: normal;
 }
 
-header button {
+.headerButton {
     line-height: 32px;
     font-weight: 300;
     cursor: pointer;
@@ -129,7 +129,7 @@ header button {
         text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
     }
 
-    header button {
+    .headerButton {
         line-height: 35px;
         font-weight: 400;
         padding: 0 60px;
@@ -147,7 +147,7 @@ header button {
         text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
     }
 
-    header button {
+    .headerButton {
         line-height: 20px;
         font-weight: 200;
         padding: 0 30px;
@@ -177,7 +177,7 @@ header button {
         font-weight: 30px;
     }
 
-    header button {
+    .headerButton {
         line-height: 40px;
         font-weight: 400;
         padding: 0 70px;
@@ -207,7 +207,7 @@ header button {
         font-weight: 50px;
     }
 
-    header button {
+    .headerButton {
         line-height: 50px;
         font-weight: 500;
         padding: 0 80px;
@@ -241,7 +241,7 @@ header button {
         font-weight: 60px;
     }
 
-    header button {
+    .headerButton {
         line-height: 60px;
         font-weight: 600;
         padding: 0 90px;
@@ -276,7 +276,7 @@ header button {
         font-weight: 70px;
     }
 
-    header button {
+    .headerButton {
         line-height: 80px;
         font-weight: 700;
         padding: 0 90px;
