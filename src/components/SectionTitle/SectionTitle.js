@@ -33,17 +33,12 @@ const SectionTitle = styled.h1`
     }
 
     @media(min-width: 1200px) {
-        font-size: 35px;
-        width: 505px;
-    }
-
-    @media(min-width: 1200px) {
-        width: 600px;
+        font-size: 30px;
+        width: 404px;
     }
 
     @media(min-width: 1800px) {
-        font-size: 45px;
-        width: 700px;
+        font-size: 35px;
     }
 
 `;
