@@ -123,29 +123,11 @@ const SkillItem = styled.div`
         margin-top: 15px;
     }
 
-    /* @media(min-width: 480px) {
-        
-    } */
-
-    /* @media(min-width: 765px) {
-        
-    } */
-
     @media(min-width: 1025px) {
         display: inline-block;
         text-align: center;
         margin-right: 60px;
     }
-/* 
-    @media(min-width: 1200px) {
-        font-size: 15px;
-        width: 763px;
-        height: 47px;
-    }
-
-    @media(min-width: 1800px) {
-        font-size: 18px;
-    } */
 `;
 
 
@@ -230,7 +212,13 @@ const PortfolioWebiste = () => {
                 </SkillsWrapper>
             </section>
             <section className="portfolio">
-                <SectionTitle>PORTFOLIO</SectionTitle>
+                <div className="portfolioHeader">
+                    <SectionTitle>PORTFOLIO</SectionTitle>
+                </div>
+                <div className="portfolioMainBackground"></div>
+                <div className="projects">
+                    {/* ENTER PROJECT HERE */}
+                </div>
             </section>
             <section className="contact">
                 <SectionTitle>CONTACT</SectionTitle>
