@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Link, animateScroll as scroll } from "react-scroll";
 import './style.css';
 import separatorWhite from '../assets/img/separatorWhite.png';
 import separatorBlack from '../assets/img/separatorBlack.png';
@@ -19,6 +20,7 @@ import StyledSocialItem from './StyledSocialItem/StyledSocialItem';
 import Button from './Button/Button';
 import Footer from './Footer/Footer';
 import MainSkillSecection from './mainSkillsSection/MainSkillSection';
+import NavBar from './NavBar/NavBar';
 
 
 const StyledWrapper = styled.div`
@@ -179,39 +181,48 @@ const TextArea = styled.textarea`
     }
 `;
 
-const StyledHamburgerContainer = styled.div`
-    width: 25px;
-    height: 25px;
-    background: white;    
-`;
-
-const StyledHamburgerWrapper = styled.ul`
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-`;
 
 const PortfolioWebiste = () => {
-
-
-    const [isOpen, setOpen] = useState(false);
-
 
     return (
         <>
             <header>
                 <nav>
-                    <StyledHamburgerContainer isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
-                        {isOpen && (
-                            <StyledHamburgerWrapper>
-                                <li>About me</li>
-                                <li>Skills</li>
-                                <li>Portfolio</li>
-                                <li>CONTACT ME</li>
-                            </StyledHamburgerWrapper>
-                        )}
-                    </StyledHamburgerContainer>
+                    {/* <NavBar/> */}
+                    <ul>
+                        <Link
+                            activeClass="active"
+                            to="aboutMe"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >About me</Link>
+                        <Link
+                            activeClass="active"
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >Skills</Link>
+                        <Link
+                            activeClass="active"
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >Portfolio</Link>
+                        <Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >CONTACT ME</Link>
+                    </ul>
                 </nav>
             </header>
             <main>
@@ -225,7 +236,7 @@ const PortfolioWebiste = () => {
                     </StyledSocialContainer>
                 </StyledWrapper>
             </main>
-            <section className="aboutMe">
+            <section className="aboutMe" id="aboutMe">
                 <SectionTitle>ABOUT ME</SectionTitle>
                 <StyledParagraph>Jestem Tomek mam 21 lat. Uwielbiam pracę w grupie,
                 dobrze czuję się współpracując z innymi ludźmi i zdobywać dzięki temu nową wiedzę.
@@ -236,7 +247,7 @@ const PortfolioWebiste = () => {
                 <MainSkillSecection />
                 <img src={separatorBlack} alt="" />
             </section>
-            <section className="skills">
+            <section className="skills" id="skills">
                 <SectionTitle>SKILLS</SectionTitle>
                 <SkillsWrapper>
                     <h2>USING NOW:</h2>
@@ -284,16 +295,19 @@ const PortfolioWebiste = () => {
                     </SkillItem>
                 </SkillsWrapper>
             </section>
-            <section className="portfolio">
+            <section className="portfolio" id="portfolio">
                 <div className="portfolioHeader">
                     <SectionTitle>PORTFOLIO</SectionTitle>
                 </div>
                 <div className="portfolioMainBackground"></div>
                 <div className="projects">
-                    {/* ENTER PROJECT HERE */}
+                    <div className="project">
+                        {/* <ProjectTemplate/> */}
+                        <h1>I haven't added any projects yet</h1>
+                    </div>
                 </div>
             </section>
-            <section className="contact">
+            <section className="contact" id="contact">
                 <SectionTitle>CONTACT</SectionTitle>
                 <p></p>
                 <img src={separatorBlack} alt="" />
