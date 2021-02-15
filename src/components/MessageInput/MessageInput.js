@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const MessageInput = styled.input`
-    width: 243px;
-    height: 43px;
+    width: 240px;
+    height: 40px;
     font-size: 12px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
@@ -14,6 +14,12 @@ const MessageInput = styled.input`
     padding-left: 8px;
     color: #8B8B8B;
     background: transparent;
+
+    @media (min-width: 1024px) {
+        height: 48px;
+        width: 609px;
+    }
+
 `;
 
 

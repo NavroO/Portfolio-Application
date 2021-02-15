@@ -31,6 +31,10 @@ const StyledFooterEndText = styled.p`
     span {
         font-weight: 700;
     }
+
+    @media (min-width: 1024px) {
+        font-size: 18px;
+    }
 `;
 
 const StyledImg = styled.img`

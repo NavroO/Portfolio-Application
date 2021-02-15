@@ -1,5 +1,5 @@
 /* eslint-disable react/style-prop-object */
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import './style.css';
 import separatorWhite from '../assets/img/separatorWhite.png';
@@ -20,11 +20,6 @@ import Button from './Button/Button';
 import Footer from './Footer/Footer';
 import MainSkillSecection from './mainSkillsSection/MainSkillSection';
 
-// const navigation = document.querySelector('.navigation');
-// document.querySelector('.toggle').onClick = function() {
-//     this.classList.toggle('active');
-//     navigation.classList.toggle('active');
-// }
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -82,7 +77,6 @@ const StyledTextSpecialization = styled(StyledText)`
 const StyledSocialContainer = styled.div`
     display: inline-block;
 `;
-
 
 const StyledParagraph = styled.p`
     margin: 10px 15px 10px 15px;
@@ -165,7 +159,7 @@ const SkillItem = styled.div`
 `;
 
 const TextArea = styled.textarea`
-    width: 243px;
+    width: 240px;
     height: 165px;
     font-size: 12px;
     resize: none;
@@ -178,34 +172,46 @@ const TextArea = styled.textarea`
     padding-left: 8px;
     color: #8B8B8B;
     background: transparent;
+
+    @media (min-width: 1024px) {
+        height: 184px;
+        width: 609px;
+    }
 `;
 
+const StyledHamburgerContainer = styled.div`
+    width: 25px;
+    height: 25px;
+    background: white;    
+`;
+
+const StyledHamburgerWrapper = styled.ul`
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+`;
 
 const PortfolioWebiste = () => {
 
-    // const openNavigation = () => {
-    //     alert("Navigation open!")
-    // };
+
+    const [isOpen, setOpen] = useState(false);
 
 
     return (
         <>
             <header>
                 <nav>
-                    {/* <div className="toggle" onClick={openNavigation}></div>
-                    <section className="navigation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul>
-                            <li>HOME</li>
-                            <li>ABOUT ME</li>
-                            <li>SKILLS</li>
-                            <li>PORTFOLIO</li>
-                            <li>CONTACT</li>
-                        </ul>
-                    </section> */}
+                    <StyledHamburgerContainer isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
+                        {isOpen && (
+                            <StyledHamburgerWrapper>
+                                <li>About me</li>
+                                <li>Skills</li>
+                                <li>Portfolio</li>
+                                <li>CONTACT ME</li>
+                            </StyledHamburgerWrapper>
+                        )}
+                    </StyledHamburgerContainer>
                 </nav>
             </header>
             <main>

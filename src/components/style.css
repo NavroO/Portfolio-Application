@@ -32,12 +32,6 @@ main {
     color: #FFFFFF;
 }
 
-    /* @media (min-width: 1024px) {
-        .main {
-            background-color: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
-            background-image: none;
-        }
-    } */
 
 .aboutMe {
     display: flex;
@@ -87,6 +81,12 @@ main {
     }
 }
 
+li {
+    list-style: none;
+    margin-right: 30px;
+    color: white;
+}
+
 .projects {
     width: 100%;
     height: 500px;
@@ -99,97 +99,3 @@ main {
     font-size: 30px;
 }
 
-.toggle {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 25px;
-    height: 25px;
-    background: #FFFFFF; /*TODO: Add hamburger icon here */
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.toggle .active {
-    background: #FFFFFF; /*TODO: Add hamburger icon here */
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-}
-
-.navigation .active {
-    visibility: visible;
-}
-
-.navigation span {
-    position: absolute;
-    top: -100%;
-    left: 0%;
-    width: 25%;
-    height: 100%;
-    background: #de0611;
-    transition: 0.25s;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.navigation .active span {
-    top: 0;
-}
-
-.navigation ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-    transform: translateX(-100px);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-    transition-delay: 0s;
-}
-
-.navigation .active ul {
-    transform: translateX(0px);
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.75s;
-}
-
-.navigation ul li {
-    list-style: none;
-}
-
-.navigation ul li a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 900;
-    color: #FFFFFF;
-    display: inline-block;
-    padding: 5px 20px;
-}
-
-.navigation ul li a:hover {
-    background: #FFFFFF;
-    color: red;
-}
-
-@media (max-width: 767px) {
-    .navigation ul li a {
-        font-size: 30px;
-    }
-}
