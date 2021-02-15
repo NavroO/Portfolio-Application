@@ -8,7 +8,8 @@ const Button = styled.button`
     border-left: 3px solid black;
     border-right: 3px solid black;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40px;
     margin-bottom: 40px;
     outline: none;

@@ -6,7 +6,8 @@ const SectionTitle = styled.h1`
     height: 65px;
     margin: 50px;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     padding: 15px;
     border: 5px solid black;
     display: flex;

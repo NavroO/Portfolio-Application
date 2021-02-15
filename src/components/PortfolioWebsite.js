@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react';
 import styled from 'styled-components';
 import './style.css';
@@ -9,7 +10,6 @@ import js from '../assets/img/js.png';
 import git from '../assets/img/git.png';
 import sass from '../assets/img/sass.png';
 import ts from '../assets/img/ts.png';
-import mongo from '../assets/img/mongo.png';
 import eng from '../assets/img/eng.png';
 import figma from '../assets/img/figma.png';
 import node from '../assets/img/node.png';
@@ -20,6 +20,11 @@ import Button from './Button/Button';
 import Footer from './Footer/Footer';
 import MainSkillSecection from './mainSkillsSection/MainSkillSection';
 
+// const navigation = document.querySelector('.navigation');
+// document.querySelector('.toggle').onClick = function() {
+//     this.classList.toggle('active');
+//     navigation.classList.toggle('active');
+// }
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -29,7 +34,32 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledText = styled.h1`
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+    @media(min-width: 480px) {
+        font-size: 30px;
+    }
+
+    @media(min-width: 765px) {
+        font-size: 40px;
+    }
+
+    @media(min-width: 1025px) {
+        font-size: 50px;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 55px;
+    }
+`
+
+const StyledTextSpecialization = styled(StyledText)`
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     margin-bottom: 15px;
 
     @media(min-width: 480px) {
@@ -56,8 +86,9 @@ const StyledSocialContainer = styled.div`
 
 const StyledParagraph = styled.p`
     margin: 10px 15px 10px 15px;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     width: 170px;
     height: 225px;
     text-align: justify;
@@ -95,7 +126,7 @@ const SkillsWrapper = styled.div`
     margin-bottom: 20px;
 
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
         width: 1000px;
         height: 330px;
         display: flex;
@@ -121,30 +152,66 @@ const SkillItem = styled.div`
 
     p {
         margin-top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         display: inline-block;
         text-align: center;
         margin-right: 60px;
     }
 `;
 
+const TextArea = styled.textarea`
+    width: 243px;
+    height: 165px;
+    font-size: 12px;
+    resize: none;
+    font-weight: bold;
+    margin: 15px;
+    border: none;
+    outline: none;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    padding-left: 8px;
+    color: #8B8B8B;
+    background: transparent;
+`;
+
 
 const PortfolioWebiste = () => {
+
+    // const openNavigation = () => {
+    //     alert("Navigation open!")
+    // };
 
 
     return (
         <>
             <header>
                 <nav>
-
+                    {/* <div className="toggle" onClick={openNavigation}></div>
+                    <section className="navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul>
+                            <li>HOME</li>
+                            <li>ABOUT ME</li>
+                            <li>SKILLS</li>
+                            <li>PORTFOLIO</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </section> */}
                 </nav>
             </header>
             <main>
                 <StyledWrapper>
                     <StyledText>my name is Thomas</StyledText>
-                    <StyledText>I’M A DEVELOPER</StyledText>
+                    <StyledTextSpecialization>I’M A DEVELOPER</StyledTextSpecialization>
                     <img src={separatorWhite} alt="" />
                     <StyledSocialContainer>
                         <StyledSocialItem><a href="https://github.com/NavroO" target="_blank"><i class="fab fa-github"></i></a></StyledSocialItem>
@@ -227,6 +294,7 @@ const PortfolioWebiste = () => {
                 <MessageInput placeholder="ENTER YOUR NAME*" />
                 <MessageInput placeholder="ENTER YOUR EMAIL*" />
                 <MessageInput placeholder="PHONE NUMBER" />
+                <TextArea placeholder="YOUR MESSAGE*" />
                 <Button>SUBMIT</Button>
             </section>
             <Footer />

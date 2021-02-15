@@ -23,12 +23,14 @@ const StyledItem = styled.div`
     h3 {
         margin-bottom: 10px;
         font-size: 17px;
-        font-weight: bold;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
     }
 
     p {
         font-size: 13px;
-        font-weight: lighter
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
     }
 
     img {
