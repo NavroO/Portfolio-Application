@@ -21,6 +21,7 @@ import Button from './Button/Button';
 import Footer from './Footer/Footer';
 import MainSkillSecection from './mainSkillsSection/MainSkillSection';
 import NavBar from './NavBar/NavBar';
+import PortfolioProject from './PortfolioProject/PortfolioProject';
 
 
 const StyledWrapper = styled.div`
@@ -301,9 +302,8 @@ const PortfolioWebiste = () => {
                 </div>
                 <div className="portfolioMainBackground"></div>
                 <div className="projects">
-                    <div className="project">
-                        {/* <ProjectTemplate/> */}
-                        <h1>I haven't added any projects yet</h1>
+                    <div className="project">   
+                        <PortfolioProject />
                     </div>
                 </div>
             </section>
