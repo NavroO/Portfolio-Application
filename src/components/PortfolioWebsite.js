@@ -77,7 +77,7 @@ const StyledTextSpecialization = styled(StyledText)`
 `
 
 const StyledSocialContainer = styled.div`
-    display: inline-block;
+    display: inline;
 `;
 
 const StyledParagraph = styled.p`
