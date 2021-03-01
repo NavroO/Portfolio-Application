@@ -21,7 +21,7 @@ import Button from './Button/Button';
 import Footer from './Footer/Footer';
 import MainSkillSecection from './mainSkillsSection/MainSkillSection';
 import NavBar from './NavBar/NavBar';
-import PortfolioProject from './PortfolioProject/PortfolioProject';
+import ProjectView from './ProjectView/ProjectView';
 
 
 const StyledWrapper = styled.div`
@@ -232,8 +232,8 @@ const PortfolioWebiste = () => {
                     <StyledTextSpecialization>I’M A DEVELOPER</StyledTextSpecialization>
                     <img src={separatorWhite} alt="" />
                     <StyledSocialContainer>
-                        <StyledSocialItem><a href="https://github.com/NavroO" target="_blank"><i class="fab fa-github"></i></a></StyledSocialItem>
-                        <StyledSocialItem><a href="https://www.linkedin.com/in/tomasz-nawrocki-bab14218b/" target="_blank"><i class="fab fa-linkedin"></i></a></StyledSocialItem>
+                        <StyledSocialItem><a href="https://github.com/NavroO" target="_blank" rel='noreferrer'><i class="fab fa-github"></i></a></StyledSocialItem>
+                        <StyledSocialItem><a href="https://www.linkedin.com/in/tomasz-nawrocki-bab14218b/" target="_blank" rel='noreferrer'><i class="fab fa-linkedin"></i></a></StyledSocialItem>
                     </StyledSocialContainer>
                 </StyledWrapper>
             </main>
@@ -302,8 +302,16 @@ const PortfolioWebiste = () => {
                 </div>
                 <div className="portfolioMainBackground"></div>
                 <div className="projects">
-                    <div className="project">   
-                        <PortfolioProject />
+                    <div className="project">
+                        {/* <ProjectView
+                            ProjectName="Vizualize Sorting"
+                            ProjectDescription="The principle of the program is very simple. 
+                            To start, the program uses a for loop to generate an array of random values. 
+                            Array values ​​are set from 5 to 750 by default. 
+                            After this operation is performed, the user can select one of the prepared algorithms 
+                            for sorting these tables."
+                            ProjectLink="https://github.com/NavroO/Vizualize-Sorting"
+                        /> */}
                     </div>
                 </div>
             </section>

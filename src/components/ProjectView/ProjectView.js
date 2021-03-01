@@ -8,20 +8,28 @@ const StyledPortfolioProjectWrapper = styled.div`
     background-color: white;
     position: relative;
     color: white;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    color: black;
 `;
 
 const StyledPortfolioProjectTitle = styled.h1`
     color: black;
 `;
 
+const StyledLink = styled.a`
+    color: black;
+    text-decoration: none;
+`;
 
-const PortfolioProject = () => {
+
+const PortfolioProject = ({ProjectName, ProjectDescription, ProjectLink}) => {
 
     return(
         <StyledPortfolioProjectWrapper>
-            <StyledPortfolioProjectTitle>Sorting Vizualizer</StyledPortfolioProjectTitle>
-            <p></p>
-            <a href="https://github.com/NavroO/Vizualize-Sorting">Github repo</a>
+            <StyledPortfolioProjectTitle>{ProjectName}</StyledPortfolioProjectTitle>
+            <p>{ProjectDescription}</p>
+            <StyledLink href={ProjectLink} target="_blank" rel='noreferrer'>Github repo</StyledLink>
         </StyledPortfolioProjectWrapper>
     )
 }
