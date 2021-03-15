@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import StyledSocialItem from '../StyledSocialItem/StyledSocialItem';
-import baselinedoublearrow from '../../assets/img/ic_baseline-double-arrow.png';
+import StyledSocialItem from '../../atoms/StyledSocialItem/StyledSocialItem';
+import baselinedoublearrow from '../../../assets/img/ic_baseline-double-arrow.png';
 
 const StyledFooter = styled.footer`
     display: flex;
@@ -48,6 +48,9 @@ const Footer = () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
     };
 
+    const date = new Date;
+    const year = date.getFullYear();
+
     return (
         <StyledFooter>
             <StyledImg src={baselinedoublearrow} alt="" onClick={scrollTop}></StyledImg>
@@ -56,7 +59,7 @@ const Footer = () => {
                 <StyledSocialItem><a href="https://www.facebook.com/tomek.nawrocki.568/" target="_blank"><i class="fab fa-facebook-square"></i></a></StyledSocialItem>
                 <StyledSocialItem><a href="https://www.linkedin.com/in/tomasz-nawrocki-bab14218b/" target="_blank"><i class="fab fa-linkedin"></i></a></StyledSocialItem>
             </div>
-            <StyledFooterEndText><span>@2021 Tomasz Nawrocki</span> All Rights Reserved.</StyledFooterEndText>
+            <StyledFooterEndText><span>{year} Tomasz Nawrocki</span> All Rights Reserved.</StyledFooterEndText>
         </StyledFooter>
     );
 }

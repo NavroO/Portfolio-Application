@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import React from 'react';
 
 const MessageInput = styled.input`
     width: 240px;
@@ -6,7 +7,7 @@ const MessageInput = styled.input`
     font-size: 12px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    margin: 15px;
+    margin: 30px;
     border: none;
     outline: none;
     border-left: 4px solid black;
@@ -19,7 +20,6 @@ const MessageInput = styled.input`
         height: 48px;
         width: 609px;
     }
-
 `;
 
 

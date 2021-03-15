@@ -2,33 +2,61 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
-import './style.css';
-import separatorWhite from '../assets/img/separatorWhite.png';
-import separatorBlack from '../assets/img/separatorBlack.png';
-import react from '../assets/img/react.png';
-import css from '../assets/img/css.png';
-import js from '../assets/img/js.png';
-import git from '../assets/img/git.png';
-import sass from '../assets/img/sass.png';
-import ts from '../assets/img/ts.png';
-import eng from '../assets/img/eng.png';
-import figma from '../assets/img/figma.png';
-import node from '../assets/img/node.png';
-import SectionTitle from './SectionTitle/SectionTitle';
-import MessageInput from './MessageInput/MessageInput';
-import StyledSocialItem from './StyledSocialItem/StyledSocialItem';
-import Button from './Button/Button';
-import Footer from './Footer/Footer';
-import MainSkillSecection from './mainSkillsSection/MainSkillSection';
-import NavBar from './NavBar/NavBar';
-import ProjectView from './ProjectView/ProjectView';
-
+import '../style.css';
+import separatorWhite from '../../assets/img/separatorWhite.png';
+import separatorBlack from '../../assets/img/separatorBlack.png';
+import react from '../../assets/img/react.png';
+import css from '../../assets/img/css.png';
+import js from '../../assets/img/js.png';
+import git from '../../assets/img/git.png';
+import sass from '../../assets/img/sass.png';
+import ts from '../../assets/img/ts.png';
+import eng from '../../assets/img/eng.png';
+import figma from '../../assets/img/figma.png';
+import node from '../../assets/img/node.png';
+import SectionTitle from '../atoms/SectionTitle/SectionTitle';
+import MessageInput from '../atoms/MessageInput/MessageInput';
+import StyledSocialItem from '../atoms/StyledSocialItem/StyledSocialItem';
+import Button from '../atoms/Button/Button';
+import Footer from '../molecules/Footer/Footer';
+import MainSkillSecection from '../molecules/MainSkillsSection/MainSkillSection';
 
 const StyledWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+`;
+
+const StyledUl = styled.ul`
+
+    .link {
+        
+        color: white;
+        text-decoration: none;
+        position: relative;
+        margin-right: 30px;
+        
+        :after {
+            content: "";
+            width: 0;
+            height: 3px;
+            position: absolute;
+            top: 120%;
+            left: 0;
+            background: white;
+            transition: width 0.5s;
+        }
+        
+        :hover {
+            color: white;
+            transition: all 0.5s;
+        }
+        
+        :hover:after {
+            width: 100%;
+        }
+    }
 `;
 
 const StyledText = styled.h1`
@@ -81,43 +109,6 @@ const StyledSocialContainer = styled.div`
     display: inline;
 `;
 
-const StyledParagraph = styled.p`
-    margin: 10px 15px 10px 15px;
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    width: 170px;
-    height: 225px;
-    text-align: justify;
-    margin-bottom: 40px;
-
-    @media(min-width: 480px) {
-        font-size: 20px;
-        width: 300px;
-    }
-
-    @media(min-width: 765px) {
-        font-size: 25px;
-        width: 400px;
-        height: 400px;
-    }
-
-    @media(min-width: 1025px) {
-        font-size: 30px;
-        width: 763px;
-        height: 350px;
-    }
-
-    @media(min-width: 1200px) {
-        font-size: 15px;
-        width: 763px;
-        height: 47px;
-    }   
-
-    @media(min-width: 1800px) {
-        font-size: 18px;
-    }
-`;
 
 const SkillsWrapper = styled.div`
     margin-bottom: 20px;
@@ -189,10 +180,10 @@ const PortfolioWebiste = () => {
         <>
             <header>
                 <nav>
-                    {/* <NavBar/> */}
-                    <ul>
+                    <StyledUl>
                         <Link
                             activeClass="active"
+                            className="link"
                             to="aboutMe"
                             spy={true}
                             smooth={true}
@@ -201,6 +192,7 @@ const PortfolioWebiste = () => {
                         >About me</Link>
                         <Link
                             activeClass="active"
+                            className="link"
                             to="skills"
                             spy={true}
                             smooth={true}
@@ -209,6 +201,7 @@ const PortfolioWebiste = () => {
                         >Skills</Link>
                         <Link
                             activeClass="active"
+                            className="link"
                             to="portfolio"
                             spy={true}
                             smooth={true}
@@ -217,13 +210,14 @@ const PortfolioWebiste = () => {
                         >Portfolio</Link>
                         <Link
                             activeClass="active"
+                            className="link"
                             to="contact"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={500}
                         >CONTACT ME</Link>
-                    </ul>
+                    </StyledUl>
                 </nav>
             </header>
             <main>
@@ -237,17 +231,7 @@ const PortfolioWebiste = () => {
                     </StyledSocialContainer>
                 </StyledWrapper>
             </main>
-            <section className="aboutMe" id="aboutMe">
-                <SectionTitle>ABOUT ME</SectionTitle>
-                <StyledParagraph>Jestem Tomek mam 21 lat. Uwielbiam pracę w grupie,
-                dobrze czuję się współpracując z innymi ludźmi i zdobywać dzięki temu nową wiedzę.
-                Uważam się za osobę zorganizowaną i uczę się na błędach dlatego do skutku staram się rozwiązać napotykane mi problemy.
-                Jestem osobą empatyczną, szczerą i uczciwą. Pracę traktuję jak przyjemność nie obowiązek.</StyledParagraph>
-                <Button>EXPLORE</Button>
-                <img src={separatorBlack} alt="" />
-                <MainSkillSecection />
-                <img src={separatorBlack} alt="" />
-            </section>
+            <MainSkillSecection/>
             <section className="skills" id="skills">
                 <SectionTitle>SKILLS</SectionTitle>
                 <SkillsWrapper>
@@ -302,17 +286,6 @@ const PortfolioWebiste = () => {
                 </div>
                 <div className="portfolioMainBackground"></div>
                 <div className="projects">
-                    <div className="project">
-                        {/* <ProjectView
-                            ProjectName="Vizualize Sorting"
-                            ProjectDescription="The principle of the program is very simple. 
-                            To start, the program uses a for loop to generate an array of random values. 
-                            Array values ​​are set from 5 to 750 by default. 
-                            After this operation is performed, the user can select one of the prepared algorithms 
-                            for sorting these tables."
-                            ProjectLink="https://github.com/NavroO/Vizualize-Sorting"
-                        /> */}
-                    </div>
                 </div>
             </section>
             <section className="contact" id="contact">

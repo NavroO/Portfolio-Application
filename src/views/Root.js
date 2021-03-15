@@ -1,4 +1,4 @@
-import PortfolioWebsite from '../components/PortfolioWebsite';
+import PortfolioWebsite from '../components/organism/PortfolioWebsite';
 
 function Root() {
   return (
