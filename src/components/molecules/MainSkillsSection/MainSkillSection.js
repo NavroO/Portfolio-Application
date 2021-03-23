@@ -7,6 +7,16 @@ import separatorBlack from '../../../assets/img/separatorBlack.png';
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
+import react from '../../../assets/img/react.png';
+import css from '../../../assets/img/css.png';
+import js from '../../../assets/img/js.png';
+import git from '../../../assets/img/git.png';
+import sass from '../../../assets/img/sass.png';
+import ts from '../../../assets/img/ts.png';
+import eng from '../../../assets/img/eng.png';
+import figma from '../../../assets/img/figma.png';
+import node from '../../../assets/img/node.png';
+import ProjectView from '../ProjectView/ProjectView';
 
 
 const StyledAboutMe = styled.section`
@@ -52,6 +62,48 @@ const StyledItem = styled.div`
     }
 `;
 
+const SkillsWrapper = styled.div`
+    margin-bottom: 20px;
+
+
+    @media (min-width: 1024px) {
+        width: 1000px;
+        height: 330px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+    }
+`;
+
+const SkillItem = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+    p {
+        margin-top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    @media(min-width: 1024px) {
+        display: inline-block;
+        text-align: center;
+        margin-right: 60px;
+    }
+`;
+
 const MainSkillSecection = () => {
 
     return (
@@ -87,6 +139,54 @@ const MainSkillSecection = () => {
                 </StyledMainWrapper>
                 <img src={separatorBlack} alt="" />
             </StyledAboutMe>
+            <section className="skills" id="skills">
+                <SectionTitle>SKILLS</SectionTitle>
+                <SkillsWrapper>
+                    <h2>USING NOW:</h2>
+                    <SkillItem>
+                        <img src={react} alt="" />
+                        <p>React</p>
+                    </SkillItem>
+                    <SkillItem>
+                        <img src={css} alt="" />
+                        <p>CSS</p>
+                    </SkillItem>
+                    <SkillItem>
+                        <img src={js} alt="" />
+                        <p>JavaScript</p>
+                    </SkillItem>
+                    <SkillItem>
+                        <img src={git} alt="" />
+                        <p>Git</p>
+                    </SkillItem>
+                </SkillsWrapper>
+                <SkillsWrapper>
+                    <h2>LEARNING:</h2>
+                    <SkillItem>
+                        <img src={sass} alt="" />
+                        <p>Sass</p>
+                    </SkillItem>
+                    <SkillItem>
+                        <img src={ts} alt="" />
+                        <p>TypeScript</p>
+                    </SkillItem>
+                    <SkillItem>
+                        <img src={node} alt="" />
+                        <p>Node.js</p>
+                    </SkillItem>
+                </SkillsWrapper>
+                <SkillsWrapper>
+                    <h2>OTHER SKILLS:</h2>
+                    <SkillItem>
+                        <img src={eng} alt="" />
+                        <p>English B2</p>
+                    </SkillItem>
+                    <SkillItem>
+                        <img src={figma} alt="" />
+                        <p>Figma</p>
+                    </SkillItem>
+                </SkillsWrapper>
+            </section>
         </>
     );
 }
