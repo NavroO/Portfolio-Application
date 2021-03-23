@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,18 +7,6 @@
 body {
     overflow-x: hidden;
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
-}
-
-header {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100vw;
-    background-color: black;
-    z-index: 2;
 }
 
 
@@ -38,13 +25,6 @@ main {
 }
 
 
-.aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .skills {
     display: flex;
     flex-direction: column;
@@ -59,60 +39,9 @@ main {
     justify-content: center;
 }
 
-.portfolioHeader {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-    background: url("../assets/img/portfoliobg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.portfolioMainBackground {
-    width: 100%;
-    height: 80px;
-    background-color: #000000;
-}
-
-@media (min-width: 1025px) {
-    .portfolioHeader {
-        background: url("../assets/img/portfoliobgDesktop.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-ul {
-    /* position: absolute; */
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-a {
-    color: white;
-    margin-right: 30px;
-    cursor: pointer;
-}
-
-.projects {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;   
-    background-color: #8B8B8B;
-    color: white;
-}
 
 .skills h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 30px;
 }
-

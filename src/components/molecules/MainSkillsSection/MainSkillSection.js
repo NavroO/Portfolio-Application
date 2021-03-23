@@ -8,6 +8,14 @@ import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 
+
+const StyledAboutMe = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
 const StyledMainWrapper = styled.div`
     margin: 10px 15px 10px 15px;
     width: 240px;
@@ -48,7 +56,7 @@ const MainSkillSecection = () => {
 
     return (
         <>
-            <section className="aboutMe" id="aboutMe">
+            <StyledAboutMe id="aboutMe">
                 <SectionTitle>ABOUT ME</SectionTitle>
                 <Paragraph>
                     I am Tom, I am 21 years old. I love working in a group,
@@ -78,7 +86,7 @@ const MainSkillSecection = () => {
                     </StyledItem>
                 </StyledMainWrapper>
                 <img src={separatorBlack} alt="" />
-            </section>
+            </StyledAboutMe>
         </>
     );
 }

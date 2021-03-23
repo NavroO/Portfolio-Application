@@ -1,10 +1,9 @@
 /* eslint-disable react/style-prop-object */
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../style.css';
 import separatorWhite from '../../assets/img/separatorWhite.png';
-import separatorBlack from '../../assets/img/separatorBlack.png';
 import react from '../../assets/img/react.png';
 import css from '../../assets/img/css.png';
 import js from '../../assets/img/js.png';
@@ -15,11 +14,12 @@ import eng from '../../assets/img/eng.png';
 import figma from '../../assets/img/figma.png';
 import node from '../../assets/img/node.png';
 import SectionTitle from '../atoms/SectionTitle/SectionTitle';
-import MessageInput from '../atoms/MessageInput/MessageInput';
 import StyledSocialItem from '../atoms/StyledSocialItem/StyledSocialItem';
-import Button from '../atoms/Button/Button';
 import Footer from '../molecules/Footer/Footer';
+import Contact from '../molecules/Contact/Contact';
+import ProjectView from '../molecules/ProjectView/ProjectView';
 import MainSkillSecection from '../molecules/MainSkillsSection/MainSkillSection';
+import PortfolioSection from '../molecules/PortfolioSection/PortfolioSection';
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -28,8 +28,26 @@ const StyledWrapper = styled.div`
     flex-direction: column;
 `;
 
+const StyledHeader = styled.header`
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    z-index: 2;
+`;
+
 const StyledUl = styled.ul`
 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+      
+    
     .link {
         
         color: white;
@@ -117,6 +135,7 @@ const SkillsWrapper = styled.div`
     @media (min-width: 1024px) {
         width: 1000px;
         height: 330px;
+        margin-left: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -152,33 +171,12 @@ const SkillItem = styled.div`
     }
 `;
 
-const TextArea = styled.textarea`
-    width: 240px;
-    height: 165px;
-    font-size: 12px;
-    resize: none;
-    font-weight: bold;
-    margin: 15px;
-    border: none;
-    outline: none;
-    border-left: 4px solid black;
-    border-bottom: 4px solid black;
-    padding-left: 8px;
-    color: #8B8B8B;
-    background: transparent;
-
-    @media (min-width: 1024px) {
-        height: 184px;
-        width: 609px;
-    }
-`;
-
 
 const PortfolioWebiste = () => {
 
     return (
         <>
-            <header>
+            <StyledHeader>
                 <nav>
                     <StyledUl>
                         <Link
@@ -219,7 +217,7 @@ const PortfolioWebiste = () => {
                         >CONTACT ME</Link>
                     </StyledUl>
                 </nav>
-            </header>
+            </StyledHeader>
             <main>
                 <StyledWrapper>
                     <StyledText>my name is Thomas</StyledText>
@@ -231,7 +229,7 @@ const PortfolioWebiste = () => {
                     </StyledSocialContainer>
                 </StyledWrapper>
             </main>
-            <MainSkillSecection/>
+            <MainSkillSecection />
             <section className="skills" id="skills">
                 <SectionTitle>SKILLS</SectionTitle>
                 <SkillsWrapper>
@@ -280,24 +278,19 @@ const PortfolioWebiste = () => {
                     </SkillItem>
                 </SkillsWrapper>
             </section>
-            <section className="portfolio" id="portfolio">
-                <div className="portfolioHeader">
-                    <SectionTitle>PORTFOLIO</SectionTitle>
+            <PortfolioSection>
+                <div className="portfolioMainBackground">
+                    <ProjectView
+                        ProjectName="Vizualize Sorting"
+                        ProjectDescription="The principle of the program is very simple. To start, the program uses a for loop to generate an array of random values. 
+                        Array values ​​are set from 5 to 750 by default. 
+                        After this operation is performed, the user can select one of the prepared algorithms for sorting these tables."
+                        GithubLink="https://github.com/NavroO/Vizualize-Sorting"
+                        LivePreviewLink="https://vizualizesorting.herokuapp.com"
+                    />
                 </div>
-                <div className="portfolioMainBackground"></div>
-                <div className="projects">
-                </div>
-            </section>
-            <section className="contact" id="contact">
-                <SectionTitle>CONTACT</SectionTitle>
-                <p></p>
-                <img src={separatorBlack} alt="" />
-                <MessageInput placeholder="ENTER YOUR NAME*" />
-                <MessageInput placeholder="ENTER YOUR EMAIL*" />
-                <MessageInput placeholder="PHONE NUMBER" />
-                <TextArea placeholder="YOUR MESSAGE*" />
-                <Button>SUBMIT</Button>
-            </section>
+            </PortfolioSection>
+            <Contact />
             <Footer />
         </>
     );
