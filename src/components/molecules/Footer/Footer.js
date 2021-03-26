@@ -19,6 +19,7 @@ const StyledFooterParagraph = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 15px;
+    cursor: pointer;
 `;
 
 const StyledFooterEndText = styled.p`

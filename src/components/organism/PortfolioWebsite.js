@@ -43,6 +43,7 @@ const StyledUl = styled.ul`
         text-decoration: none;
         position: relative;
         margin-right: 30px;
+        cursor: pointer;
         
         :after {
             content: "";
