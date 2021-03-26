@@ -2,11 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledProject = styled.div`
+
     padding: 20px;
-    background-color: white;
     width: 250px;
     border-radius: 15px;
-    background: white;
+    background: #2a2b2f;
+    border-radius: 15px;
+    border: 2px solid #1e1f23;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    color: white;
     
 
     @media (min-width: 481px) {
@@ -36,7 +40,7 @@ const Link = styled.a`
     text-decoration: none;
     position: relative;
     margin-right: 30px;
-    color: black;
+    color: white;
         
     :after {
         content: "";
@@ -45,12 +49,12 @@ const Link = styled.a`
         position: absolute;
         top: 120%;
         left: 0;
-        background: black;
+        background: white;
         transition: width 0.5s;
     }
         
     :hover {
-        color: black;
+        color: white;
         transition: all 0.5s;
     }
         
