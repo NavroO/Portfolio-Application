@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import StyledSocialItem from '../../atoms/StyledSocialItem/StyledSocialItem';
+import StyledSocialItem from '../../atoms/SocialItem/SocialItem';
 import baselinedoublearrow from '../../../assets/img/ic_baseline-double-arrow.png';
 
 const StyledFooter = styled.footer`

@@ -4,10 +4,9 @@ import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 import MessageInput from '../../atoms/MessageInput/MessageInput';
 import Button from '../../atoms/Button/Button';
 import separatorBlack from '../../../assets/img/separatorBlack.png';
-import { Formik } from 'formik';
 
 
-const StyledContact = styled.form`
+const StyledContact = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +38,7 @@ const TextArea = styled(MessageInput)`
 const Contact = () => {
 
     return (
-        <StyledContact className="contact" id="contact">
+        <StyledContact id="contact">
             <SectionTitle>CONTACT</SectionTitle>
             <img src={separatorBlack} alt="" />
             <MessageInput placeholder="ENTER YOUR NAME*" />

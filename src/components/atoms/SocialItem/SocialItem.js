@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import React from 'react';
 
-const StyledSocialItem = styled.p`
+const SocialItem = styled.p`
     margin: 15px;
     display: inline-block;
     font-size: 20px;
@@ -31,4 +30,4 @@ const StyledSocialItem = styled.p`
     }
 `;
 
-export default StyledSocialItem;
+export default SocialItem;

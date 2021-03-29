@@ -1,10 +1,12 @@
 import PortfolioWebsite from '../components/organism/PortfolioWebsite';
+import { GlobalStyle } from '../components/GlobalStyle';
 
 function Root() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
       <PortfolioWebsite/>
-    </div>
+    </>
   );
 }
 

@@ -16,7 +16,6 @@ import ts from '../../../assets/img/ts.png';
 import eng from '../../../assets/img/eng.png';
 import figma from '../../../assets/img/figma.png';
 import node from '../../../assets/img/node.png';
-import ProjectView from '../ProjectView/ProjectView';
 
 
 const StyledAboutMe = styled.section`
@@ -60,6 +59,13 @@ const StyledItem = styled.div`
         top: -5%;
         left: -20%
     }
+`;
+
+const StyledSkills = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 const SkillsWrapper = styled.div`
@@ -139,7 +145,7 @@ const MainSkillSecection = () => {
                 </StyledMainWrapper>
                 <img src={separatorBlack} alt="" />
             </StyledAboutMe>
-            <section className="skills" id="skills">
+            <StyledSkills id="skills">
                 <SectionTitle>SKILLS</SectionTitle>
                 <SkillsWrapper>
                     <h2>USING NOW:</h2>
@@ -186,7 +192,7 @@ const MainSkillSecection = () => {
                         <p>Figma</p>
                     </SkillItem>
                 </SkillsWrapper>
-            </section>
+            </StyledSkills>
         </>
     );
 }
