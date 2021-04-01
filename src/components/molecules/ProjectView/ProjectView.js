@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledProject = styled.div`
 
     padding: 20px;
-    width: 250px;
+    width: 245px;
     border-radius: 15px;
     background: #2a2b2f;
     border-radius: 15px;
