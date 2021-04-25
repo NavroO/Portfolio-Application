@@ -52,6 +52,14 @@ const PortfolioSection = () => {
                         GithubLink="https://github.com/NavroO/Vizualize-Sorting"
                         LivePreviewLink="https://vizualizesorting.herokuapp.com"
                     />
+                    <ProjectView
+                        ProjectName="Shopping Cards"
+                        ProjectDescription="The principle of the program is very simple. To start, the program uses a for loop to generate an array of random values. 
+                        Array values ​​are set from 5 to 750 by default. 
+                        After this operation is performed, the user can select one of the prepared algorithms for sorting these tables."
+                        GithubLink="https://github.com/NavroO/Shopping-Cards"
+                        LivePreviewLink="https://shoppingcards.netlify.app/"
+                    />
                 </PortfolioMainBackground>
         </StyledPortfolioSection>
     )
