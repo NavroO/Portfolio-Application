@@ -15,6 +15,11 @@ const Button = styled.button`
     margin-bottom: 40px;
     outline: none;
     cursor: pointer;
+  
+    a {
+      text-decoration: none;
+      color: black;
+    }
 `;
 
 export default Button;

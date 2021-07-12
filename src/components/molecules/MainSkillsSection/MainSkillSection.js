@@ -4,6 +4,7 @@ import laptop from '../../../assets/img/laptop.svg';
 import pencile from '../../../assets/img/pencile.svg';
 import key from '../../../assets/img/maintenance.svg';
 import separatorBlack from '../../../assets/img/separatorBlack.svg';
+import pdf from './resume.pdf';
 import react from '../../../assets/img/react.svg';
 import css from '../../../assets/img/css.svg';
 import js from '../../../assets/img/js.svg';
@@ -122,7 +123,9 @@ const MainSkillSecection = () => {
                     I consider myself an organized person and I learn from my mistakes, which is why I try to solve the problems I encounter.
                     I am an empathetic, sincere and honest person. I treat my work as a pleasure, not an obligation.
                 </Paragraph>
-                <Button>DOWNLOAD RESUME</Button>
+                <Button>
+                    <a href={pdf} target="_blank">DOWNLOAD RESUME</a>
+                </Button>
                 <img src={separatorBlack} alt="" />
                 <StyledMainWrapper>
                     <StyledItem>
