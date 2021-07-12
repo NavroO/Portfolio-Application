@@ -1,4 +1,3 @@
-/* eslint-disable react/style-prop-object */
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,10 +5,10 @@ import Footer from '../molecules/Footer/Footer';
 import Contact from '../molecules/Contact/Contact';
 import MainSkillSecection from '../molecules/MainSkillsSection/MainSkillSection';
 import PortfolioSection from '../molecules/PortfolioSection/PortfolioSection';
-import Hero from '../molecules/Hero/Hero';
+import {Hero} from '../molecules/Hero/Hero';
 
 
-const PortfolioWebiste = () => {
+const PortfolioWebsite = () => {
 
     const wrapper = useRef(null);
 
@@ -40,4 +39,4 @@ const PortfolioWebiste = () => {
     );
 }
 
-export default PortfolioWebiste;
+export default PortfolioWebsite;

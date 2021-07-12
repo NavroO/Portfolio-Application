@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, animateScroll as scroll } from "react-scroll";
-import separatorWhite from '../../../assets/img/separatorWhite.png';
-import HeadBackground from '../../../assets/img/headBackground.png';
+import separatorWhite from '../../../assets/Icons/separatorWhite2.svg';
+import HeadBackground from '../../../assets/Images/HeadBackground.jpg';
 import StyledSocialItem from '../../atoms/SocialItem/SocialItem';
 
 const StyledWrapper = styled.div`
@@ -126,8 +126,7 @@ const StyledSocialContainer = styled.div`
     display: inline;
 `;
 
-
-const Hero = () => {
+export const Hero = () => {
 
     return (
         <>
@@ -187,5 +186,3 @@ const Hero = () => {
         </>
     );
 }
-
-export default Hero;

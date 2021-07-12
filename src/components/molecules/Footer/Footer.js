@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import StyledSocialItem from '../../atoms/SocialItem/SocialItem';
-import baselinedoublearrow from '../../../assets/img/ic_baseline-double-arrow.png';
+import baselinedoublearrow from '../../../assets/img/baseline-double-arrow.svg';
 
 const StyledFooter = styled.footer`
     display: flex;
@@ -60,7 +60,7 @@ const Footer = () => {
                 <StyledSocialItem><a href="https://www.facebook.com/tomek.nawrocki.568/" target="_blank"><i class="fab fa-facebook-square"></i></a></StyledSocialItem>
                 <StyledSocialItem><a href="https://www.linkedin.com/in/tomasz-nawrocki-bab14218b/" target="_blank"><i class="fab fa-linkedin"></i></a></StyledSocialItem>
             </div>
-            <StyledFooterEndText><span>{year} Tomasz Nawrocki</span> All Rights Reserved.</StyledFooterEndText>
+            <StyledFooterEndText><span>@{year} Tomasz Nawrocki</span> All Rights Reserved.</StyledFooterEndText>
         </StyledFooter>
     );
 }

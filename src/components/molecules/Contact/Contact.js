@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 import MessageInput from '../../atoms/MessageInput/MessageInput';
 import Button from '../../atoms/Button/Button';
-import separatorBlack from '../../../assets/img/separatorBlack.png';
+import separatorBlack from '../../../assets/img/separatorBlack.svg';
 
 
 const StyledContact = styled.section`

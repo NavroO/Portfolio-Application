@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import laptop from '../../../assets/img/laptop.png';
-import pencile from '../../../assets/img/pencile.png';
-import key from '../../../assets/img/key.png';
-import separatorBlack from '../../../assets/img/separatorBlack.png';
+import laptop from '../../../assets/img/laptop.svg';
+import pencile from '../../../assets/img/pencile.svg';
+import key from '../../../assets/img/maintenance.svg';
+import separatorBlack from '../../../assets/img/separatorBlack.svg';
+import react from '../../../assets/img/react.svg';
+import css from '../../../assets/img/css.svg';
+import js from '../../../assets/img/js.svg';
+import git from '../../../assets/img/git.svg';
+import sass from '../../../assets/img/sass.svg';
+import eng from '../../../assets/img/eng.svg';
+import figma from '../../../assets/img/figma.svg';
+import node from '../../../assets/img/node.svg';
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
-import react from '../../../assets/img/react.png';
-import css from '../../../assets/img/css.png';
-import js from '../../../assets/img/js.png';
-import git from '../../../assets/img/git.png';
-import sass from '../../../assets/img/sass.png';
-import ts from '../../../assets/img/ts.png';
-import eng from '../../../assets/img/eng.png';
-import figma from '../../../assets/img/figma.png';
-import node from '../../../assets/img/node.png';
+
 
 
 const StyledAboutMe = styled.section`
@@ -171,10 +171,6 @@ const MainSkillSecection = () => {
                     <SkillItem>
                         <img src={sass} alt="" />
                         <p>Sass</p>
-                    </SkillItem>
-                    <SkillItem>
-                        <img src={ts} alt="" />
-                        <p>TypeScript</p>
                     </SkillItem>
                     <SkillItem>
                         <img src={node} alt="" />
