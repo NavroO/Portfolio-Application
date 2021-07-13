@@ -34,6 +34,13 @@ const StyledMainWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px;
+      height: 400px;
+    }
 `;
 
 const StyledItem = styled.div`
@@ -60,6 +67,16 @@ const StyledItem = styled.div`
         top: -5%;
         left: -20%
     }
+  
+    @media (min-width: 1024px) {
+      h3 {
+        font-size: 20px;
+      }
+      
+      p {
+        font-size: 15px;
+      }
+    }
 `;
 
 const StyledSkills = styled.section`
@@ -84,8 +101,8 @@ const SkillsWrapper = styled.div`
 
         h2 {
             position: absolute;
-            top: 0%;
-            left: 0%;
+            top: 0;
+            left: 0;
         }
     }
 `;
@@ -124,15 +141,17 @@ const MainSkillSecection = () => {
                     I am an empathetic, sincere and honest person. I treat my work as a pleasure, not an obligation.
                 </Paragraph>
                 <Button>
-                    <a href={pdf} target="_blank">DOWNLOAD RESUME</a>
+                    <a href={pdf} target="_blank">RESUME</a>
                 </Button>
                 <img src={separatorBlack} alt="" />
                 <StyledMainWrapper>
                     <StyledItem>
                         <img src={pencile} alt="" />
                         <h3>DESIGN</h3>
-                        <p>I can design the website based on your needs and suggestions.
-                    I can also create it from scratch by consulting with you during work.</p>
+                        <p>
+                            I can design the website based on your needs and suggestions.
+                            I can also create it from scratch by consulting with you during work.
+                        </p>
                     </StyledItem>
                     <StyledItem>
                         <img src={key} alt="" />
